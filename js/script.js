@@ -1,3 +1,9 @@
+console.log("asdasd")
+
+
+
+
+
 const zakazblock = document.querySelector(".zakaz_block")
 const zakazbtnsticks = document.querySelectorAll(".button_stick")
 window.addEventListener("click", function (event) {
