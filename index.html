@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/script.js" defer></script>
+	<title>Ragnarok - restaurant</title>
+</head>	
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header_container">
+				<div class="header_left_bar">
+					<img class="header_logo_img" src="img/bufet_logo.svg" alt="logo">
+				</div>
+				<div class="header_right_bar">
+					<a href="" class="header_link_zakaz"><span class="white_color_text predzakaz">ПРЕДЗАКАЗ</span><div class="header_what_logo">?</div></a>
+					<a href="https://www.facebook.com/" target="blank" class="header_link_social">
+						<svg class="header_img_social" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
+							</g>
+						</svg>
+					</a>
+					<a href="" target="blank" class="header_link_social">
+						<svg class="header_img_social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+							<path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
+						</a>
+						<a href="" target="blank" class="header_link_social">
+							<svg class="header_img_social" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+								<g id="Flat_copy"><path d="M32,31.292V19.46c0-6.34-3.384-9.29-7.896-9.29c-3.641,0-5.273,2.003-6.182,3.409v-2.924h-6.86   c0.091,1.937,0,20.637,0,20.637h6.86V19.767c0-0.615,0.044-1.232,0.226-1.672c0.495-1.233,1.624-2.509,3.518-2.509   c2.483,0,3.475,1.892,3.475,4.666v11.041H32V31.292z M3.835,7.838c2.391,0,3.882-1.586,3.882-3.567   c-0.044-2.024-1.49-3.564-3.836-3.564S0,2.246,0,4.271c0,1.981,1.489,3.567,3.792,3.567H3.835z M7.265,31.292V10.655H0.406v20.637   H7.265z"/></g></svg>
+							</a>
+							<a href="" target="blank" class="header_link_social">
+								<svg class="header_img_social" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+									<g><path d="M4,440.5c55.6,5,105.7-9,151.3-43.2c-47.7-4.2-79.6-28-97.4-72.6c15.6,1.9,30.2,2.4,45.7-1.8   c-51.4-16-78.8-49.6-82.5-103.8c15.4,7.2,29.9,12.4,47,12.6c-30.5-22.9-46.1-52.6-45.5-90c0.3-17.2,4.9-33.4,14-48.7   C93.1,159.1,164,195.7,251.3,201.8c-0.5-3.8-0.8-6.8-1.2-9.9c-7.2-55.4,28.8-105.8,83.8-116.3c34.5-6.6,65,2.5,90.8,26.3   c4,3.6,7.4,4.4,12.4,3.1c20.1-5.1,39.2-12.5,57.7-22.5c-7.1,23.4-21.7,41-41.5,55.8c4.5-0.8,9.1-1.4,13.6-2.3   c4.7-1,9.4-2.1,14.1-3.4c4.5-1.2,8.9-2.6,13.3-4.1c4.5-1.5,9-3.2,14.3-4.1c-2.6,3.6-5.1,7.4-7.9,10.9c-11.6,14.7-25,27.6-39.7,39.1   c-1.5,1.2-2.8,3.8-2.7,5.6c0.8,35.5-4.2,70.1-15.7,103.7c-22.6,66.2-62,119.8-121.1,158.1c-29.2,18.9-61.1,31.3-95.2,38.5   c-33.8,7.1-67.8,8.4-101.9,4.4c-34.2-4-66.7-14.1-97.3-29.9c-8.1-4.1-15.9-8.7-23.8-13.1C3.6,441.3,3.8,440.9,4,440.5z"/></g></svg>
+								</a>
+							</div>
+						</div>
+					</header>
+					<section class="menu_bar">
+						<div class="burger">
+							<span class="burger_line"></span>
+							<span class="burger_line"></span>
+							<span class="burger_line"></span>
+						</div>
+						<div class="menu_bar_list">
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Главная</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Меню</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Найти Buffet</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Новости</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Обратная связь</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Видео</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">О нас</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Карьера</span></a>
+							<a href="" class="menu_bar_link"><span class="menu_bar_wtext">Партнерам</span></a>
+						</div>
+					</section>
+					<section class="menu">
+						<div class="container container_menu">
+							<div class="menu_list">
+								<a href="" class="menu_link"><span class="menu_white_text">Главная</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">Меню</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">Найти Buffet</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">Новости</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">Обратная связь</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">Видео</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">О нас</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">Карьера</span></a>
+								<a href="" class="menu_link"><span class="menu_white_text">Партнерам</span></a>
+							</div>
+						</div>
+					</section>
+					<section class="big_board">
+						<div class="sliderblock">
+							<div class="slide">
+								<a href=""><img src="img/2021_.jpg" alt="" class="big_board_img"></a>
+							</div>
+							<div class="slide">
+								<a href=""><img src="img/my-vidkruti.jpg" alt="" class="big_board_img"></a>
+							</div>
+							<div class="slide">
+								<a href=""><img src="img/цены.jpg" alt="" class="big_board_img"></a>
+							</div>
+							<div class="slide">
+								<a href=""><img src="img/эко-движуха_закон.jpg" alt="" class="big_board_img"></a>
+							</div>
+						</div>
+					</section>
+					<section class="after_bigboard">
+						<div class="container after_bigboard_container">
+							<span class="orange_text after_bigboard_title">Приложение для заказа онлайн</span>
+							<a href="" class="after_bigboard_link"><img src="img/knopa.svg" alt="" class="after_bigboard_link_img"></a>
+							<span class="orange_text after_bigboard_subtitle">Обратите внимание! Состав блюд может изменяться, уточняйте состав в пиццерии!</span>
+						</div>
+					</section>
+					<section class="zakaz_block">			
+						<div class="zakaz_block_header">
+							<div class="zakaz_total_bag">
+								<div class="bag_with_total">
+									<svg class="zakaz_bag_svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+										<g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path d="M4751,4994.3c-681-120.6-1192.7-616.8-1319.1-1278.3c-19.5-101.2-27.2-293.8-27.2-647.9v-503.9h-875.5h-875.5v-3677.1V-4790H5000h3346.4v3677.1v3677.1h-873.6h-873.6l-7.8,579.8l-7.8,577.8l-62.3,184.8C6338.6,4437.9,5967,4792,5433.8,4949.6C5241.2,5006,4926.1,5027.4,4751,4994.3z M5225.7,4722c62.3-11.7,181-46.7,262.7-77.8c381.3-147.9,636.2-408.6,770.4-786c52.5-153.7,54.5-159.5,60.3-723.8l7.8-570.1H5000H3673.1l7.8,570.1c5.8,564.2,7.8,570.1,60.3,723.8c31.1,85.6,85.6,204.3,120.6,264.6C4126.4,4556.6,4714,4815.4,5225.7,4722z M3404.6,1815.3v-476.7h136.2H3677v476.7v476.7h1323h1323v-476.7v-476.7h136.2h136.2v476.7v476.7h739.3H8074v-3404.8v-3404.8H5000H1926v3404.8v3404.8h739.3h739.3V1815.3z"/></g></g>
+									</svg>
+									<h2 class="total_zakaz zakaz_font">0</h2>
+								</div>
+								<h2 class="total_price zakaz_font total_num">0 грн</h2>
+							</div>
+							<input type="submit" class="output_submit">
+							<label for="output_submit"></label>
+						</div>
+						<div class="zakaz_button">
+							<div class="forTuch"></div>
+							<span class="button_stick button_sticklr"></span>
+							<span class="button_stick button_stickrl"></span>
+						</div>
+						<div class="zakaz">						
+						</div>
+						<div class="zakaz_footer">
+							<div class="zakaz_total_sum_footer">
+								<div class="zakaz_total_bag_footer">
+									<h2 class="total_price_footer zakaz_font total_num">0 грн</h2>
+								</div>
+								<input type="submit" class="output_submit_footer" value="Отчистить">
+								<label for="output_submit_footer"></label>
+							</div>
+						</div>
+					</section>
+					<section class="pizza_block">
+						<div class="container pizza_block_container menu_block">
+							<h1 class="orange_text block_title pizza_block_title">Пицца</h1>
+							<span class="grey_text block_subtitle pizza_block_subtitle">Вкусная пицца от BUFET</span>
+							<ul class="pizza_block_list block_list">
+								<li class="pizza_block_item block_item">
+									<a href="" class="pizza_block_item_img_link block_item_img_link">
+										<img src="img/firmennaya-1.jpg" alt="" class="pizza_block_item_img block_item_img">
+									</a>
+									<div class="pizza_item_after_img item_after_img">
+										<a href="" class="pizza_block_item_title_link orange_text block_item_title_link">
+											Пицца «Фирменная»
+										</a>
+										<span class="item_price orange_text pizza_item_price">95 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="pizza_block_item block_item">
+									<a href="" class="pizza_block_item_img_link block_item_img_link">
+										<img src="img/bavarska-1.jpg" alt="" class="pizza_block_item_img block_item_img">
+									</a>
+									<div class="pizza_item_after_img item_after_img">
+										<a href="" class="pizza_block_item_title_link orange_text block_item_title_link">
+											Пицца «Баварская»
+										</a>
+										<span class="item_price orange_text pizza_item_price">100 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="pizza_block_item block_item">
+									<a href="" class="pizza_block_item_img_link block_item_img_link">
+										<img src="img/fitnes-1.jpg" alt="" class="pizza_block_item_img block_item_img">
+									</a>
+									<div class="pizza_item_after_img item_after_img">
+										<a href="" class="pizza_block_item_title_link orange_text block_item_title_link">
+											Пицца «Фитнес»
+										</a>
+										<span class="item_price orange_text pizza_item_price">85 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="pizza_block_item block_item">
+									<a href="" class="pizza_block_item_img_link block_item_img_link">
+										<img src="img/kurica-s-ananasom-1.jpg" alt="" class="pizza_block_item_img block_item_img">
+									</a>
+									<div class="pizza_item_after_img item_after_img">
+										<a href="" class="pizza_block_item_title_link orange_text block_item_title_link">
+											Пицца «Курица с ананасом»
+										</a>
+										<span class="item_price orange_text pizza_item_price">105 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="pizza_block_item block_item">
+									<a href="" class="pizza_block_item_img_link block_item_img_link">
+										<img src="img/kurica-s-gribami-1.jpg" alt="" class="pizza_block_item_img block_item_img">
+									</a>
+									<div class="pizza_item_after_img item_after_img">
+										<a href="" class="pizza_block_item_title_link orange_text block_item_title_link">
+											Пицца «Курица с грибами»
+										</a>
+										<span class="item_price orange_text pizza_item_price">110 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="pizza_block_item block_item">
+									<a href="" class="pizza_block_item_img_link block_item_img_link">
+										<img src="img/salyami-11.jpg" alt="" class="pizza_block_item_img block_item_img">
+									</a>
+									<div class="pizza_item_after_img item_after_img">
+										<a href="" class="pizza_block_item_title_link orange_text block_item_title_link">
+											Пицца «Салями»
+										</a>
+										<span class="item_price orange_text pizza_item_price">115 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="pizza_block_item block_item">
+									<a href="" class="pizza_block_item_img_link block_item_img_link">
+										<img src="img/s-vetchinoj-1.jpg" alt="" class="pizza_block_item_img block_item_img">
+									</a>
+									<div class="pizza_item_after_img item_after_img">
+										<a href="" class="pizza_block_item_title_link orange_text block_item_title_link">
+											Пицца «Ветчина»
+										</a>
+										<span class="item_price orange_text pizza_item_price">120 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>	
+							</ul>
+						</div>
+					</section>
+					<section class="salads_block">
+						<div class="container salads_block_container menu_block">
+							<h1 class="orange_text block_title salads_block_title">Салаты</h1>
+							<span class="grey_text block_subtitle salads_block_subtitle">Салаты от BUFET</span>
+							<ul class="salads_block_list block_list">
+								<li class="salads_block_item block_item">
+									<a href="" class="salads_block_item_img_link block_item_img_link">
+										<img src="img/tsezar-2.jpg" alt="" class="salads_block_item_img block_item_img">
+									</a>
+									<div class="salads_item_after_img item_after_img">
+										<a href="" class="salads_block_item_title_link orange_text block_item_title_link">
+											Салат «Цезарь»
+										</a>
+										<span class="item_price orange_text salads_item_price">60 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="salads_block_item block_item">
+									<a href="" class="salads_block_item_img_link block_item_img_link">
+										<img src="img/salat-vesenii_category.jpg" alt="" class="salads_block_item_img block_item_img">
+									</a>
+									<div class="salads_item_after_img item_after_img">
+										<a href="" class="salads_block_item_title_link orange_text block_item_title_link">
+											Салат «Весенний»
+										</a>
+										<span class="item_price orange_text salads_item_price">55 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="salads_block_item block_item">
+									<a href="" class="salads_block_item_img_link block_item_img_link">
+										<img src="img/salat-stolichny_category.jpg" alt="" class="salads_block_item_img block_item_img">
+									</a>
+									<div class="salads_item_after_img item_after_img">
+										<a href="" class="salads_block_item_title_link orange_text block_item_title_link">
+											Салат «Столичный»
+										</a>
+										<span class="item_price orange_text salads_item_price">50 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="salads_block_item block_item">
+									<a href="" class="salads_block_item_img_link block_item_img_link">
+										<img src="img/salat-shyba_category.jpg" alt="" class="salads_block_item_img block_item_img">
+									</a>
+									<div class="salads_item_after_img item_after_img">
+										<a href="" class="salads_block_item_title_link orange_text block_item_title_link">
+											Салат «Шуба»
+										</a>
+										<span class="item_price orange_text salads_item_price">70 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="drink_block">
+						<div class="container drink_block_container menu_block">
+							<h1 class="orange_text block_title drink_block_title">Холодные напитки</h1>
+							<span class="grey_text block_subtitle drink_block_subtitle">Освежающие напитки от BUFET</span>
+							<ul class="drink_block_list block_list">
+								<li class="drink_block_item block_item">
+									<a href="" class="drink_block_item_img_link block_item_img_link">
+										<img src="img/coca-collla.jpg" alt="" class="drink_block_item_img block_item_img">
+									</a>
+									<div class="drink_item_after_img item_after_img">
+										<a href="" class="drink_block_item_title_link orange_text block_item_title_link">
+											Напиток «Кока колла»
+										</a>
+										<span class="item_price orange_text drink_item_price">20 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+								<li class="drink_block_item block_item">
+									<a href="" class="drink_block_item_img_link block_item_img_link">
+										<img src="img/bonakva.jpg" alt="" class="drink_block_item_img block_item_img">
+									</a>
+									<div class="drink_item_after_img item_after_img">
+										<a href="" class="drink_block_item_title_link orange_text block_item_title_link">
+											Напиток «Бонаква»
+										</a>
+										<span class="item_price orange_text drink_item_price">15 грн</span>
+									</div>
+									<div class="add_about_footer">
+										<a href="" class="pizza_block_item_about_link block_item_about_link">
+											<span class="white_color_text_item">Подробнее</span>
+										</a>
+										<div class="add_zakaz">
+											<span class="add_zakaz_btn">Добавить</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="cocktail_block">
+						<div class="container cocktail_block_container menu_block">
+							<h1 class="orange_text block_title drink_block_title">Коктейли</h1>
+							<span class="grey_text block_subtitle drink_block_subtitle">Товар закончился, но скоро его обязательно завезут</span>
+						</div>
+					</section>
+					<section class="news_and_votes">
+						<div class="container news_and_votes_container">
+							<div class="news">
+								<span class="news_text black_text_bold">Новости</span>
+								<ul class="news_list">
+									<li class="news_item">
+										<a href="" class="news_data_link">
+											<span class="news_data">28.09</span>
+										</a>
+										<p class="news_text_about black_text_regular">
+											<a href="" class="news_text_link"><span class="orange_text_small">Приложение для заказа работает!</span></a> Эконом свое время! Делай заказ в дороге, в офисе или перед перерывом, а мы приготовим его к твоему приходу. Приложение для заказа подключено ко всем заведениям сети пиццерий BUFET. Он доступен по QR-коду и на платформах App Store и Play
+										</p>
+									</li>
+									<li class="news_item">
+										<a href="" class="news_data_link">
+											<span class="news_data">28.07</span>
+										</a>
+										<p class="news_text_about black_text_regular">
+											<a href="" class="news_text_link"><span class="orange_text_small">Мы работаем</span></a> Адреса уже работающих заведений: 1. Полтавский шлях 126 2. Ул. Любви малой 24 3. Просп. Гагарина 177 4. Ул. Культуры 23 5. Просп. Архитектора Алешина 19 6. Ул. Сумская 41 7. Просп. Независимости 5А 8. Просп. Героев Харькова 256 ...
+										</p>
+									</li>
+									<li class="news_item">
+										<a href="" class="news_data_link">
+											<span class="news_data">28.05</span>
+										</a>
+										<p class="news_text_about black_text_regular">
+											<a href="" class="news_text_link"><span class="orange_text_small">Розыгрыш в Instagram.</span></a> Условия для участия в розыгрыше 1.Быть подписанным на нашу страницу @bufetua 2. Поставить ругательство на публикацию с розыгрышем 3. Отметить друга в комментариях под публикацией с розыгрышем ПОДРОБНЫЕ ПРАВИЛА УЧАСТИЯ В РАЗЫГРАШЕ 1.1. Запад «Розыгрыш», далее – Запад, проводится только на территории г. Харькова в Сети быстрого питания «BUFET». Период ...
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="votes">
+								<span class="votes_text black_text_bold">Голосование</span>
+							</div>
+						</div>
+					</section>
+					<footer class="footer">
+						<div class="container footer_container">
+							<div class="footer_left_bar">
+								<small class="copyright">
+									&copy;&nbsp; все права сохранены <span class="copyright_big">Bufet 2023</span>
+								</small>
+							</div>
+							<div class="footer_right_bar">
+								<a href="" class="footer_link_zakaz"><span class="white_color_text">ПРЕДЗАКАЗ</span><div class="footer_what_logo">?</div></a>
+								<a href="" target="blank" class="footer_link_social">
+									<svg class="footer_img_social" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+										<g>
+											<path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
+										</g>
+									</svg>
+								</a>
+								<a href="" target="blank" class="footer_link_social">
+									<svg class="footer_img_social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+										<path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
+									</a>
+									<a href="" target="blank" class="footer_link_social">
+										<svg class="footer_img_social" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+											<g id="Flat_copy"><path d="M32,31.292V19.46c0-6.34-3.384-9.29-7.896-9.29c-3.641,0-5.273,2.003-6.182,3.409v-2.924h-6.86   c0.091,1.937,0,20.637,0,20.637h6.86V19.767c0-0.615,0.044-1.232,0.226-1.672c0.495-1.233,1.624-2.509,3.518-2.509   c2.483,0,3.475,1.892,3.475,4.666v11.041H32V31.292z M3.835,7.838c2.391,0,3.882-1.586,3.882-3.567   c-0.044-2.024-1.49-3.564-3.836-3.564S0,2.246,0,4.271c0,1.981,1.489,3.567,3.792,3.567H3.835z M7.265,31.292V10.655H0.406v20.637   H7.265z"/></g></svg>
+										</a>
+										<a href="" target="blank" class="footer_link_social">
+											<svg class="footer_img_social" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+												<g><path d="M4,440.5c55.6,5,105.7-9,151.3-43.2c-47.7-4.2-79.6-28-97.4-72.6c15.6,1.9,30.2,2.4,45.7-1.8   c-51.4-16-78.8-49.6-82.5-103.8c15.4,7.2,29.9,12.4,47,12.6c-30.5-22.9-46.1-52.6-45.5-90c0.3-17.2,4.9-33.4,14-48.7   C93.1,159.1,164,195.7,251.3,201.8c-0.5-3.8-0.8-6.8-1.2-9.9c-7.2-55.4,28.8-105.8,83.8-116.3c34.5-6.6,65,2.5,90.8,26.3   c4,3.6,7.4,4.4,12.4,3.1c20.1-5.1,39.2-12.5,57.7-22.5c-7.1,23.4-21.7,41-41.5,55.8c4.5-0.8,9.1-1.4,13.6-2.3   c4.7-1,9.4-2.1,14.1-3.4c4.5-1.2,8.9-2.6,13.3-4.1c4.5-1.5,9-3.2,14.3-4.1c-2.6,3.6-5.1,7.4-7.9,10.9c-11.6,14.7-25,27.6-39.7,39.1   c-1.5,1.2-2.8,3.8-2.7,5.6c0.8,35.5-4.2,70.1-15.7,103.7c-22.6,66.2-62,119.8-121.1,158.1c-29.2,18.9-61.1,31.3-95.2,38.5   c-33.8,7.1-67.8,8.4-101.9,4.4c-34.2-4-66.7-14.1-97.3-29.9c-8.1-4.1-15.9-8.7-23.8-13.1C3.6,441.3,3.8,440.9,4,440.5z"/></g></svg>
+											</a>
+										</div>
+									</div>
+								</footer>
+							</div>
+							<script src="js/jquery.js"></script>
+							<script src="js/jquery.bxslider.js"></script>
+							<script>
+								$(document).ready(function(){
+									$('.sliderblock').bxSlider({
+										minSlides: 1,
+										maxSlides: 1,
+										moveSlides: 1,
+										auto: true,
+										autoHover: true,
+									});
+								});
+							</script>
+						</body>	
+						</html>
